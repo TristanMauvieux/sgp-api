@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: apb-spring-boot
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: diginamic02
+Implementation-Vendor-Id: DTA
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/apb-spring-boot
+Created-By: Maven Integration for Eclipse
+
