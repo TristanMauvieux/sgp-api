@@ -1,8 +1,9 @@
-package DTA.sgp.entite;
+package dta.sgp.entite;
 
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,6 +15,23 @@ public class Collaborateur {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Departement getDepartement() {
+		return departement;
+	}
+
+	public void setDepartement(Departement departement) {
+		this.departement = departement;
+	}
+
 	private String matricule;
 	private String nom;
 	private String prenom;
@@ -26,6 +44,16 @@ public class Collaborateur {
 	private boolean actif;
 	@ManyToOne
 	private Departement departement;
+	@Embedded
+	private Banque banque;
+
+	public Banque getBanque() {
+		return banque;
+	}
+
+	public void setBanque(Banque banque) {
+		this.banque = banque;
+	}
 
 	public String getMatricule() {
 		return matricule;

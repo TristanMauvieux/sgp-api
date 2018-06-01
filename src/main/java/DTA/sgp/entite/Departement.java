@@ -1,4 +1,4 @@
-package DTA.sgp.entite;
+package dta.sgp.entite;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
