@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Collaborateur {
@@ -23,6 +24,8 @@ public class Collaborateur {
 	private String emailPro;
 	private ZonedDateTime dateHeurereation;
 	private boolean actif;
+	@ManyToOne
+	private Departement departement;
 
 	public String getMatricule() {
 		return matricule;
